@@ -1,4 +1,4 @@
-CC = gcc
+CC = gcc-8
 CFLAGS = -O1 -std=c99 -Wall -Wextra
 UNLOOP_BLOCK_SIZE = 2 4
 BLOCKING_WIDTH = 4 8 12 16 20 24 28 32
