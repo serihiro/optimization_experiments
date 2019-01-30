@@ -22,7 +22,7 @@ int main()
     {
         for (j = 0; j < N; ++j)
         {
-            V2[j] += M1[i][j] * V1[j];
+            V2[i] += M1[i][j] * V1[j];
         }
     }
     elapsed_time = clock() - elapsed_time;
