@@ -31,3 +31,7 @@ util.o: util.c
 clean:
 	$(RM) ./*.o
 	$(RM) -rf ./*.dSYM
+
+.PHONY: format
+format:
+	clang-format $(wildcard *.c) -i

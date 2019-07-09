@@ -1,4 +1,4 @@
-CC = gcc-8
+CC = gcc
 CFLAGS = -O1 -std=c99 -Wall -Wextra
 UNLOOP_BLOCK_SIZE = 2 4
 BLOCKING_WIDTH = 4 8 12 16 20 24 28 32
@@ -46,3 +46,7 @@ util.o: util.c
 clean:
 	$(RM) ./*.o
 	$(RM) -rf ./*.dSYM
+
+.PHONY: format
+format:
+	clang-format -i $(wildcard *.c)
