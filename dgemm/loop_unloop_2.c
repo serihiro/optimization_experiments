@@ -29,7 +29,8 @@ int main() {
     }
   }
   elapsed_time = clock() - elapsed_time;
-  printf("elapsed time = %.6f sec\n", elapsed_time / CLOCKS_PER_SEC);
+  double time = elapsed_time / CLOCKS_PER_SEC;
+  print_performance(time, FLOPs);
   assert_result(N, M3, EXPECTED);
 
   return 0;

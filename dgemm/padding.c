@@ -1,7 +1,6 @@
 #include "data_padding.h"
 #include "util.h"
 #include <assert.h>
-#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -26,7 +25,8 @@ int main() {
     }
   }
   elapsed_time = clock() - elapsed_time;
-  printf("elapsed time = %.6f sec\n", elapsed_time / CLOCKS_PER_SEC);
+  double time = elapsed_time / CLOCKS_PER_SEC;
+  print_performance(time, FLOPs);
   for (i = 0; i < N; i++)
     for (j = 0; j < N; j++)
       assert(M3[i][j] == EXPECTED);
