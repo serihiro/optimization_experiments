@@ -7,7 +7,7 @@ void assert_result(int n, double m[n][n], double expected) {
       assert(m[i][j] == expected);
 }
 
-void print_performance(double elapsed_time, unsigned long flps) {
+void print_performance(double elapsed_time, unsigned long long flps) {
   printf("elapsed time = %.6f sec, %.6f GFLOPS\n", elapsed_time,
          flps / elapsed_time / 1e9);
 }
