@@ -30,6 +30,7 @@
 
 6. **成果物を残す**
    - テーマ別ディレクトリに `Makefile` と `report.md` を置く。
+   - 各実験ごとに `yukkuri_dialogue.md` を追加し、ゆっくり霊夢（先生役）とゆっくり魔理沙（先生役）の対話形式で解説を書く。解説は実験するテーマの詳細な説明、最適化方針を具体的に説明する。
    - `README.md` の Contents を更新する。
 
 ## 実装時の推奨ディレクトリ構成
@@ -39,6 +40,7 @@
   benchmark.c            # 複数実装 + 計測
   Makefile               # build/run/clean
   report.md              # 比較表と考察
+  yukkuri_dialogue.md    # ゆっくり魔理沙と霊夢の対話解説
 ```
 
 ## 再現コマンドのテンプレート
