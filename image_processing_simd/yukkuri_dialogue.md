@@ -27,9 +27,11 @@
 
 **魔理沙：**
 画素 \((x,y)\) の出力を
-\[
+
+```math
 out(x,y)=\sum_{dy=-1}^{1}\sum_{dx=-1}^{1} K(dx,dy)\cdot in(x+dx,y+dy)
-\]
+```
+
 で計算する。これが3x3 convolutionの基本だ。
 
 **霊夢：**
