@@ -15,3 +15,5 @@ $ make execute_all
 - [x] gemm_cache_optimization
 - [x] mandelbrot_simd
 - [x] image_processing_simd
+
+- [x] distance_computation_simd
