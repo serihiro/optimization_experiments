@@ -1,0 +1,5 @@
+version: 1
+interface:
+  display_name: Mandelbrot Optimization Workflow
+  short_description: Build variants, benchmark, and report optimization results.
+  default_prompt: Execute a full optimization workflow with naive and SIMD variants, benchmark comparison, and markdown report.

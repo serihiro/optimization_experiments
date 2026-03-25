@@ -13,3 +13,4 @@ $ make execute_all
 - [x] dgemm
 - [x] dgemv
 - [x] gemm_cache_optimization
+- [x] mandelbrot_simd
