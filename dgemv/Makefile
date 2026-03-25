@@ -19,7 +19,7 @@ build_all:
 	@make embarassingly_parallel.o
 
 embarassingly_parallel.o: embarrassingly_parallel.c util.o
-	$(CC) $(CFALGS) -fopenmp embarrassingly_parallel.c util.o -o embarassingly_parallel.o
+	$(CC) $(CFLAGS) -fopenmp embarrassingly_parallel.c util.o -o embarassingly_parallel.o
 
 naive.o: naive.c util.o
 	$(CC) $(CFLAGS) naive.c util.o -o naive.o
