@@ -11,4 +11,5 @@ $ make execute_all
 
 # Contents
 - [x] dgemm
-- [ ] dgemv
+- [x] dgemv
+- [x] gemm_cache_optimization

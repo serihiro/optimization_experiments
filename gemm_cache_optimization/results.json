@@ -1,0 +1,44 @@
+[
+  {
+    "N": 256,
+    "naive": {
+      "elapsed_sec_avg": 0.026673,
+      "gflops_avg": 1.2586666666666666,
+      "checksum": 4110611.315199889
+    },
+    "optimized": {
+      "elapsed_sec_avg": 0.020226,
+      "gflops_avg": 1.661,
+      "checksum": 4110611.315199889
+    },
+    "speedup": 1.3196504237288136
+  },
+  {
+    "N": 384,
+    "naive": {
+      "elapsed_sec_avg": 0.09930533333333333,
+      "gflops_avg": 1.1406666666666667,
+      "checksum": 13874223.060800293
+    },
+    "optimized": {
+      "elapsed_sec_avg": 0.06322666666666667,
+      "gflops_avg": 1.7933333333333334,
+      "checksum": 13874223.060800293
+    },
+    "speedup": 1.5721800116890707
+  },
+  {
+    "N": 512,
+    "naive": {
+      "elapsed_sec_avg": 0.502856,
+      "gflops_avg": 0.5336666666666667,
+      "checksum": 32886590.478396833
+    },
+    "optimized": {
+      "elapsed_sec_avg": 0.136246,
+      "gflops_avg": 1.9716666666666667,
+      "checksum": 32886590.478396833
+    },
+    "speedup": 3.6945658963148027
+  }
+]
