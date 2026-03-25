@@ -17,3 +17,4 @@ $ make execute_all
 - [x] image_processing_simd
 
 - [x] distance_computation_simd
+- [x] kdtree_nearest_neighbor
