@@ -1,5 +1,6 @@
-CC=gcc
-CFLAGS=-O3 -std=c11 -Wall -Wextra -march=native -mavx2
+CC ?= gcc
+OPT_LEVEL ?= -O3
+CFLAGS ?= $(OPT_LEVEL) -std=c11 -Wall -Wextra -march=native -mavx2
 
 .PHONY: all run clean
 

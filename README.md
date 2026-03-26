@@ -21,10 +21,11 @@ $ make execute_all
 
 
 # Benchmark build optimization flags
-- `dgemm` と `dgemv` はデフォルトで `-O3` を使用します。
-- 学習目的で最適化を無効化する場合は `OPT_LEVEL=-O0` を明示してください。
+- すべての実験ディレクトリの `Makefile` で、GCC最適化オプションはデフォルトで `-O3` です。
+- 環境変数 `OPT_LEVEL` で上書きできます（例: `-O0`, `-O2`, `-Ofast`）。
 
 ```sh
 $ make -C dgemm clean execute_all OPT_LEVEL=-O0
-$ make -C dgemv clean execute_all OPT_LEVEL=-O0
+$ make -C mandelbrot_simd clean run OPT_LEVEL=-O2
+$ make -C kdtree_nearest_neighbor clean run OPT_LEVEL=-Ofast
 ```
