@@ -1,5 +1,6 @@
-CC = gcc
-CFLAGS = -O0 -std=c11 -Wall -Wextra
+CC ?= gcc
+OPT_LEVEL ?= -O3
+CFLAGS ?= $(OPT_LEVEL) -std=c11 -Wall -Wextra
 UNLOOP_BLOCK_SIZE = 2 4
 BLOCKING_WIDTH = 4 8 12 16 20 24 28 32
 
