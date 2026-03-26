@@ -1,6 +1,7 @@
-CC := gcc
-CFLAGS := -O3 -march=native -std=c11 -Wall -Wextra -Wpedantic
-LDFLAGS := -lm
+CC ?= gcc
+OPT_LEVEL ?= -O3
+CFLAGS ?= $(OPT_LEVEL) -march=native -std=c11 -Wall -Wextra -Wpedantic
+LDFLAGS ?= -lm
 
 TARGET := benchmark
 SRC := benchmark.c
